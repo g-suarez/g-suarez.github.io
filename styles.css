@@ -1,4 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  opacity: 0.3;
+} 
+
+.mySlides {
+  display: none;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: whitesmoke;
@@ -9,4 +40,129 @@ body {
     background-color: black;
     margin-right: 20px;
     margin-left:  20px;
+}
+
+.text1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.navbar{
+    
+  font-weight: bold;
+  background-color:  #6441a5;
+  text-decoration: none;
+  overflow: hidden;
+  text-align:center;
+  font-size: 20px;
+}
+
+.navbar a {
+  display: inline-block;
+  
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+
+.navbar a:hover{
+  background-color: #9146ff;
+  color: black;
+}
+
+.navbar a.active{
+  background-color: #04AA6D;
+color: white;
+}
+
+
+  .h1{
+    font-weight: bold;
+    display:inline;
+    width:200px;
+    font-size: 25px;
+}
+  .experience{
+    background-color: #141414;
+}
+.about{
+  float:right;
+  font-size: 25px;
+  background-color: #2c2c2c;
+}
+
+.selfie{
+  float: left;
+   max-width: 20%;
+   height: auto;
+   left: 0px;
+   right: 0px;
+   margin-left: 40px;
+ }
+
+ #face{
+   width: 100%;
+   height: auto;
+   left: 0px;
+   right: 0px;
+ }
+
+
+.timeline-wrapper {
+    position: relative;
+    padding: 22px 0;
+    margin-left: 40%;
+    
   }
+  .timeline-wrapper:last-child:before {
+    height: 0;
+  }
+  .timeline-wrapper:before {
+    content: "";
+    background: #474559;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 38px;
+  }
+  
+  .timeline-yr {
+    background: #6441a5;
+    border-radius: 100%;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+  }
+  .timeline-yr span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    line-height: 75px;
+  }
+  
+  .timeline-info {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 432px;
+    margin-left: 6em;
+  }
+  .timeline-info small {
+    color: #6441a5;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+
