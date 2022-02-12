@@ -12,42 +12,178 @@
 
 </head>
 <body>
-    <div class="container">
-      
-        <div class="row">
-            <span class="text1">Bienvenido a la experiencia Gab</span>
-        </div>
-    </div>
-    <div class="slideshow-container">  
-        <div class="mySlides fade">
-   
-          <img src="./images/hero1.png" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-          <img src="./images/hero2.JPG" style="width:100%">  
-        </div>=
-        <div class="mySlides fade">   
-          <img src="./images/hero3.png" style="width:100%">   
-        </div>
-        </div>
-        
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#exp">Experience</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact me</a>
-      </div>
-  <section id = "exp">
-      
-</section>
-  <section id = "about">
 
+  <section id = "exp">
+    <div class="experience">
+      <h1>My Experience</h1>
+      <div class="timeline">
+          <div class="timeline-wrapper">
+               <div class="timeline-yr">
+                    <span>2021</span>
+               </div>
+               <div class="timeline-info">
+                    <h3><span>Manejo de Arboles Binarios</span><small>Lenguaje: Java</small></h3>
+                    <a href="https://github.com/g-suarez/Proyecto2_EDD">
+                    <img src="./images/binary.png"></a>
+               </div>
+          </div>
+          <div class="timeline-wrapper">
+              <div class="timeline-yr">
+                  <span>2020</span>
+              </div>
+              <div class="timeline-info">
+                  <h3><span>Sistema de Delivery</span><small>Lenguaje: Python</small></h3>
+                  <a href ="https://replit.com/join/rehzhskpwz-gsuarez">
+                      <img src="./images/delivery.png"></a>
+              </div>
+          </div>
+          <div class="timeline-wrapper">
+              <div class="timeline-yr">
+                  <span>2019</span>
+              </div>
+              <div class="timeline-info">
+                  
+                  <h3><span>Juegos en Scratch</span><small>Lenguaje: Scratch</small></h3>
+                  <a href="https://scratch.mit.edu/projects/379094176/">
+                  <img src="./images/scratch.png"></a>
+              </a>
+              </div>
+          </div>
+
+  </div>
+</section>
+
+  <section id = "about">
+    <div class = "about">
+              
+      <h1>About me</h1>
+      <div class = "selfie"><img src="./images/Selfie.jpg" id="face"> </div>
+      <div class= "about-text">
+
+    <div class="animated animated-text">
+        <h2>
+        <span>¡Hola! Soy</span>
+        <div class="animated-info">
+        <span class="animated-item">Gabriella</span>
+        <span class="animated-item">Gab</span>
+        <span class="animated-item">FairlyGab</span>
+    
+    </div>
+</h2>
+    <span> Soy estudiante de Ingeniería de Sistemas en la Universidad Metropolitana.</span>
+    <div class="animated animated-text">
+        
+        <span> Mis objetivos a corto plazo son</span>
+        <div class="animated-info">
+        <span class="animated-item">graduarme</span>
+        <span class="animated-item">vivir sola</span>
+        <span class="animated-item">programar más</span>
+    </div>
+    </div>
+    <span> Mis objetivos a largo plazo son</span>
+    <div class="animated-info">
+        <span class="animated-item">mudarme del país</span>
+        <span class="animated-item">desarrolar un juego</span>
+        <span class="animated-item">aprender 2 idiomas</span>
+    </div>
+    <span> <br>Mis pasatiempos favoritos son: jugar videojuegos, <br>hacer música, ver videos en youtube y pasarme el tiempo libre en Twitch.</span>
+    </div>
+    </div>
+</div>
+  </div>
   </section>
   <section id = "skills">
+    <div class ="skills">
+      <h1>Skills</h1> 
+      <div class="piano">
+        <div data-note="C" class="key white" id =0></div>
+        <div data-note="Db" class="key black"></div>
+        <div data-note="D" class="key white"></div>
+        <div data-note="Eb" class="key black"></div>
+        <div data-note="E" class="key white"></div>
+        <div data-note="F" class="key white"></div>
+        <div data-note="Gb" class="key black"></div>
+        <div data-note="G" class="key white"></div>
+        <div data-note="Ab" class="key black"></div>
+        <div data-note="A" class="key white"></div>
+        <div data-note="Bb" class="key black"></div>
+        <div data-note="B" class="key white"></div>
+      </div>
+    
+      <audio id="C" src="./notes/C.mp3"></audio>
+      <audio id="Db" src="notes/Db.mp3"></audio>
+      <audio id="D" src="notes/D.mp3"></audio>
+      <audio id="Eb" src="notes/Eb.mp3"></audio>
+      <audio id="E" src="notes/E.mp3"></audio>
+      <audio id="F" src="notes/F.mp3"></audio>
+      <audio id="Gb" src="notes/Gb.mp3"></audio>
+      <audio id="G" src="notes/G.mp3"></audio>
+      <audio id="Ab" src="notes/Ab.mp3"></audio>
+      <audio id="A" src="notes/A.mp3"></audio>
+      <audio id="Bb" src="notes/Bb.mp3"></audio>
+      <audio id="B" src="notes/B.mp3"></audio>
+
+      <p id="skillNotes"></p>
+
+      
+      <p id="piano-footer">Toca el piano para ver mis habilidades</p>
+    </div>
 
 </section>
 <section id = "contact">
+  <h1>Contact me!</h1> 
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <table class="form-style">
+               <tr>
+                  <td>
+                     <label>
+                        Nombre: <span class="required">*</span>
+                     </label>
+                  </td>
+                  <td>
+                     <input type="text" name="name" class="long"/>
+                     <span class="error" id="errorname"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label>
+                       Correo electrónico <span class="required">*</span>
+                     </label>
+                  </td>
+                  <td>
+                     <input type="email" name="email" class="long"/>
+                     <span class="error" id="erroremail"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label>
+                        Mensaje <span class="required">*</span>
+                     </label>
+                  </td>
+                  <td>
+                     <textarea name="message" class="long field-textarea"></textarea>
+                     <span class="error" id="errormsg"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>
+                    <input type="reset" value="Eliminar"> 
+                    <input type="submit" value="Enviar">      
+                     
+                  </td>
+               </tr>
+            </table>
+         </form>
+         <div class = "socials">
+             <a href="https://twitter.com/fairlygab">
+             <img src="./images/twitter.png" id ="icons" ></a>
+             <a href="https://www.twitch.tv/fairlygab"><img src="./images/twitch.png" id ="icons" ></a>
+             <a href="https://wa.me/584126374897"><img src="./images/whatsapp.png" id ="icons" ></a>
+             <span>Correo: g.suarez@correo.unimet.edu.ve</span>
+        </div>
 
 </section>
 
